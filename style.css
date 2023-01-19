@@ -1,0 +1,93 @@
+* { /* Seletor Universal  */ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #09090A;
+  color: white;
+  height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px;
+}
+
+button {
+    padding: 16px 24px 16px 24px;
+    border-radius: 8px;
+    border: 1px solid #8B5CF6;
+    background-color: transparent;
+    color: #FFFFFF;
+    display: flex;
+    gap: 12px; /* Espaço entre elementos flex */
+    align-items: center;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+}
+
+form {
+    display: flex;
+    padding: 0px 48px;
+}
+
+.habits {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; 
+    margin-top: 60px;
+}
+
+.habit {
+    display: flex;
+    width: 64px;
+    height: 64px;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.days {
+    display: flex;
+    margin-left: 32px;
+    gap: 48px;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+/* Pega das divs dentro da class .day */
+.day div {
+    margin-bottom: 8px;
+    font-family: 'Roboto Mono';
+    text-align: center;
+    line-height: 125%;
+    font-size: 20px;
+    color: #A1A1AA;
+}
+
+input {
+    appearance: None;
+    -webkit-appearance: none;
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    border: 2px solid #27272A;
+    background-color: #18181B;
+}
+
+/* Pseudo-selector */
+input:checked {
+    border: 2px solid #A78BFA;
+    background-color: #8B5CF6;
+}
